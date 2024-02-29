@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+  </head>
+  <!--Contains a zoom function in the styling to make the page more interactive for the user-->
+  <style>
+    body{background-color: cornflowerblue;}
+    .container-fluid{display: flex;flex-direction: column; text-align: center;}
+    .col-12 {font-size: x-large; color: ghostwhite;}
+    .zoom:hover{transform:scale(1.1);};
+    
+    
+  </style>
+  <body>
+    <div class="container-fluid text-center">
+
+      <!--Contains a HTTP GET method to generate the dynamic content. User will be redirected to shop view which will load the appropriate item.-->
+        
+      <h1 style="color: ghostwhite;">Welcome Back</h1>
+      <p style="color: ghostwhite;">Browse our range of Games and Accessories</p>
+      <div class="col-12">
+        <form method="get" action="/login"><button class="btn-primary btn">Checkout Now</button></div><br>
+        </form>
+      <div class="row">
+        <div class="col-sm-3">
+          <a href ="/shop?rec=1001">
+          <img src="/images/SkyrimPS5.png" class="img-fluid zoom" alt ="Skyrim" title="SkyPS5">Skyrim PS5</a>
+        </div>
+        <div class="col-sm-3">
+          <a href ="/shop?rec=1002"><img src="/images/SkyrimXbox.png" class="img-fluid zoom" alt ="SkyrimXbox" title="SkyrimXbox">Skyrim Xbox X</a>
+        </div>
+        <div class="col-sm-3">
+          <a href ="/shop?rec=1003"><img src="/images/Stray.jpg" class="img-fluid zoom" alt ="Stray" title="StrayCover">Stray</a>
+        </div>
+        <div class="col-sm-3">
+          <a href ="/shop?rec=1004"><img src="/images/Last.jpg" class="img-fluid zoom" alt ="Lastofus" title="Lastofus">The Last of Us</a>
+        </div>  
+      </div><br> 
+
+      <div>
+        <div class="col-12">Experience the Latest in Gaming</div>
+      </div><br>
+     
+      <div class="row">
+        <div class="col-sm-3"> 
+          <a href ="/shop?rec=1005"><img src="/images/Cities.jpg" class="img-fluid zoom">City Skylines</a>
+        </div>
+        <div class="col-sm-3"><a href ="/shop?rec=1006"><img src="/images/FifaPS5.jpg" class="img-fluid zoom" alt ="Fifa" title="FifaPS5">Fifa 23 PS5</a>
+        </div>
+        <div class="col-sm-3"><a href ="/shop?rec=1007"><img src="/images/FifaPS5.jpg" class="img-fluid zoom" alt ="Fifa" title="FifaXbox">Fifa 23 Xbox X</a>
+        </div>
+        <div class="col-sm-3"><a href ="/shop?rec=1008"><img src="/images/Crash.jpg" class="img-fluid zoom" alt ="CrashBandicoot" title="CrashBandicootCover">Crash Bandicoot</a>
+        </div>
+      </div><br>
+
+      <div>
+        <div class="col-12">The Latest Gadgets</div>
+      </div><br>
+   
+      <div class="row">
+        <div class="col-sm-4">
+          <a href ="/shop?rec=1009"><img src="/images/Dualsense.jpg" class="img-fluid zoom" alt ="Dualsense" title="DualSensePS5">Dualsense</a>
+        </div>
+        <div class="col-sm-4">
+          <a href ="/shop?rec=1010"><img src="/images/Xboxcont.jpg" class="img-fluid zoom" alt ="SeriesXcontroller" title="XboxController">Series X Controller</a>
+        </div>
+      </div>
+    </div>       
+        
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  </body>
+  <script>
+   
+  </script>
+</html>
